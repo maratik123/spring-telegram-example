@@ -38,7 +38,7 @@ configurations {
 }
 
 dependencies {
-    implementation 'com.github.maratik123:spring-telegram:1.4'
+    implementation 'com.github.maratik123:spring-telegram:1.5'
     compile('org.springframework.boot:spring-boot-starter')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
