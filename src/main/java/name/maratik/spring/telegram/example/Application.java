@@ -1,8 +1,10 @@
 package name.maratik.spring.telegram.example;
 
 import maratik.name.spring.telegram.annotation.EnableTelegramBot;
+import maratik.name.spring.telegram.annotation.TelegramCommand;
 import maratik.name.spring.telegram.config.TelegramBotBuilder;
 import maratik.name.spring.telegram.config.TelegramBotType;
+import maratik.name.spring.telegram.util.Localizable;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -22,6 +24,21 @@ public class Application {
         return new TelegramBotBuilder()
             .username("[username]")
             .token("[token]");
+    }
+
+    /**
+     * Optional bean to support localization.
+     * For example, it can be used at {@link TelegramCommand#description()}:
+     * <br/>
+     * <code>
+     *     {@literal @}TelegramCommand(description = "#{{@literal @}loc.t('some translation tag')}")
+     * </code>
+     * <br/>
+     * Looks ugly, but anyway.
+     */
+    @Bean
+    public Localizable loc() {
+        return new Localizable();
     }
 
     public static void main(String[] args) {
