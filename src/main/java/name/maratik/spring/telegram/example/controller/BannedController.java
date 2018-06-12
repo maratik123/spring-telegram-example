@@ -1,8 +1,9 @@
 package name.maratik.spring.telegram.example.controller;
 
-import maratik.name.spring.telegram.annotation.TelegramBot;
-import maratik.name.spring.telegram.annotation.TelegramForward;
-import maratik.name.spring.telegram.annotation.TelegramMessage;
+import name.maratik.spring.telegram.annotation.TelegramBot;
+import name.maratik.spring.telegram.annotation.TelegramForward;
+import name.maratik.spring.telegram.annotation.TelegramMessage;
+
 import org.springframework.beans.factory.annotation.Value;
 
 /**

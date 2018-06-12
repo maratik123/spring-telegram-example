@@ -1,12 +1,15 @@
 package name.maratik.spring.telegram.example.controller;
 
-import maratik.name.spring.telegram.TelegramBotService;
-import maratik.name.spring.telegram.annotation.TelegramBot;
-import maratik.name.spring.telegram.annotation.TelegramCommand;
-import maratik.name.spring.telegram.annotation.TelegramForward;
-import maratik.name.spring.telegram.annotation.TelegramHelp;
-import maratik.name.spring.telegram.annotation.TelegramMessage;
-import maratik.name.spring.telegram.model.TelegramMessageCommand;
+import name.maratik.spring.telegram.TelegramBotService;
+import name.maratik.spring.telegram.annotation.TelegramBot;
+import name.maratik.spring.telegram.annotation.TelegramCommand;
+import name.maratik.spring.telegram.annotation.TelegramForward;
+import name.maratik.spring.telegram.annotation.TelegramHelp;
+import name.maratik.spring.telegram.annotation.TelegramMessage;
+import name.maratik.spring.telegram.model.TelegramMessageCommand;
+
+import org.springframework.beans.factory.config.EmbeddedValueResolver;
+import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.api.methods.BotApiMethod;
 import org.telegram.telegrambots.api.methods.ForwardMessage;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
@@ -24,7 +27,8 @@ import java.time.Instant;
 public class SimpleController {
     /**
      * The message handler. (For argument mapping see
-     * {@link TelegramBotService#TelegramBotService(org.telegram.telegrambots.TelegramBotsApi, org.springframework.beans.factory.config.EmbeddedValueResolver, java.lang.String)}
+     * {@link TelegramBotService#TelegramBotService(TelegramBotsApi, EmbeddedValueResolver, java.lang.String)}
+     * )
      * .
      * @param userId user id
      * @param user User object

@@ -1,7 +1,7 @@
 package name.maratik.spring.telegram.example.controller;
 
-import maratik.name.spring.telegram.annotation.TelegramBot;
-import maratik.name.spring.telegram.annotation.TelegramCommand;
+import name.maratik.spring.telegram.annotation.TelegramBot;
+import name.maratik.spring.telegram.annotation.TelegramCommand;
 
 /**
  * Some controller, which is richer than default controller (it is achieved by inheritance).

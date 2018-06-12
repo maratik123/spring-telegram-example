@@ -1,10 +1,10 @@
 package name.maratik.spring.telegram.example.controller;
 
+import name.maratik.spring.telegram.annotation.TelegramBot;
+import name.maratik.spring.telegram.annotation.TelegramCommand;
 import name.maratik.spring.telegram.example.util.SomeEnum;
+import name.maratik.spring.telegram.util.Localizable;
 
-import maratik.name.spring.telegram.annotation.TelegramBot;
-import maratik.name.spring.telegram.annotation.TelegramCommand;
-import maratik.name.spring.telegram.util.Localizable;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 
 /**

@@ -1,10 +1,11 @@
 package name.maratik.spring.telegram.example;
 
-import maratik.name.spring.telegram.annotation.EnableTelegramBot;
-import maratik.name.spring.telegram.annotation.TelegramCommand;
-import maratik.name.spring.telegram.config.TelegramBotBuilder;
-import maratik.name.spring.telegram.config.TelegramBotType;
-import maratik.name.spring.telegram.util.Localizable;
+import name.maratik.spring.telegram.annotation.EnableTelegramBot;
+import name.maratik.spring.telegram.annotation.TelegramCommand;
+import name.maratik.spring.telegram.config.TelegramBotBuilder;
+import name.maratik.spring.telegram.config.TelegramBotType;
+import name.maratik.spring.telegram.util.Localizable;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

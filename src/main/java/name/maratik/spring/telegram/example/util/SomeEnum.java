@@ -1,6 +1,6 @@
 package name.maratik.spring.telegram.example.util;
 
-import maratik.name.spring.telegram.util.LocalizableValue;
+import name.maratik.spring.telegram.util.LocalizableValue;
 
 /**
  * @author <a href="mailto:maratik@yandex-team.ru">Marat Bukharov</a>
