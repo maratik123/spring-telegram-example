@@ -9,7 +9,7 @@ buildscript {
 }
 
 plugins {
-    id 'com.github.spotbugs' version '1.6.1'
+    id 'com.github.spotbugs' version '1.6.2'
 }
 
 group 'name.maratik'
@@ -29,7 +29,7 @@ apply plugin: 'io.spring.dependency-management'
 sourceCompatibility = 1.8
 
 wrapper {
-    gradleVersion = '4.7'
+    gradleVersion = '4.9'
     distributionType = 'ALL'
 }
 
@@ -38,7 +38,7 @@ configurations {
 }
 
 dependencies {
-    implementation 'com.github.maratik123:spring-telegram:1.9'
+    implementation 'com.github.maratik123:spring-telegram:1.10'
     compile('org.springframework.boot:spring-boot-starter')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
