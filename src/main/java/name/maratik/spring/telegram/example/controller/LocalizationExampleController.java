@@ -5,7 +5,7 @@ import name.maratik.spring.telegram.annotation.TelegramCommand;
 import name.maratik.spring.telegram.example.util.SomeEnum;
 import name.maratik.spring.telegram.util.Localizable;
 
-import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 
 /**
  * @author <a href="mailto:maratik@yandex-team.ru">Marat Bukharov</a>
