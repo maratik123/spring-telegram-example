@@ -9,7 +9,7 @@ buildscript {
 }
 
 plugins {
-    id 'com.github.spotbugs' version '1.6.5'
+    id 'com.github.spotbugs' version '4.2.4'
 }
 
 group 'name.maratik'
